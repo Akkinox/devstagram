@@ -20,10 +20,12 @@
 
        <main class="container mx-auto mt-10">
             <h2 class="font-black text-center text-3xl">@yield('titulo')</h2>
-            @yield('contenido')
-       </main>
+            <div class="mt-5">
+                @yield('contenido')
+            </div>
+        </main>
 
-       <footer class="text-center p-5 text-gray-600 uppercase font-bold">
+       <footer class="mt-10 text-center p-5 text-gray-600 uppercase font-bold">
             Devstragram todos los derechos reservados {{now()->year}}
        </footer>
     </body>
